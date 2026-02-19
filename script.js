@@ -12,14 +12,19 @@ function handleClick(index) {
     board[index] = currentPlayer;
     cells[index].textContent = currentPlayer;
 
+    // checking for a winner winner after every move
+    checkWinner();
+
     // to switch the players constantly 
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+}
 
-    // checking for winner after every move 
-    checkWinner();
+function printWinner(player) {
+    alert(player + " wins!");
 }
 
 function checkWinner() {
+    // combinations for winning the game (aka the indexes of the array)
     const winningNumbers = [
         [0,1,2],
         [3,4,5],
@@ -38,4 +43,11 @@ function checkWinner() {
             return board[a];
         }
     }
+}
+
+function resetGame() {
+    board = ["", "", "", "", "", "", "", "", ""];
+    currentPlayer = "X";
+    //making sure all cells are empty again
+    cells.forEach(cell => cell.textContent = "");
 }
