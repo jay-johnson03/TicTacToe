@@ -55,7 +55,7 @@ p {
 }
 
 .cell:hover {
-    background-color: lightgray;
+    background-color: rgb(245, 231, 205);
     cursor:crosshair;
 }
 

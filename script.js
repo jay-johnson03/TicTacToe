@@ -21,6 +21,8 @@ function handleClick(index) {
 
 function printWinner(player) {
     alert(player + " wins!");
+    //debug
+    console.log(player + " wins!");
 }
 
 function checkWinner() {
@@ -43,6 +45,8 @@ function checkWinner() {
             return board[a];
         } else if (!board.includes("")) {
             alert("It's a tie!");
+            //debug
+            console.log("It's a tie!");
             return "tie";
         }
     }
@@ -53,8 +57,11 @@ function resetGame() {
     currentPlayer = "X";
     //making sure all cells are empty again
     cells.forEach(cell => cell.textContent = "");
+    //debug
+    console.log("Game reset!");
 }
 
 function printGame() {
     print(board);
+    console.log("printing in progress...");
 }
