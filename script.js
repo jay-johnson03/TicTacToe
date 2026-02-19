@@ -41,6 +41,9 @@ function checkWinner() {
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
             printWinner(board[a]);
             return board[a];
+        } else if (!board.includes("")) {
+            alert("It's a tie!");
+            return "tie";
         }
     }
 }
@@ -50,4 +53,8 @@ function resetGame() {
     currentPlayer = "X";
     //making sure all cells are empty again
     cells.forEach(cell => cell.textContent = "");
+}
+
+function printGame() {
+    print(board);
 }

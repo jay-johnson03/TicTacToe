@@ -5,6 +5,15 @@
     background-image: url("./media/background.jpg");
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./media/background.jpg");
+}
+
 
 .game-board-container {
     display: grid;
