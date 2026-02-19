@@ -1,7 +1,11 @@
-* {
+/*hoopla for a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+Cuba:wght@100;400&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playwrite Cuba Guides', cursive;
 }
 
 body {
@@ -13,6 +17,7 @@ body {
     background-image: url("./media/background.jpg");
     background-size: cover;
     background-position: center;
+    font-family: 'Playwrite Cuba Guides', cursive;
 }
 
 
@@ -61,5 +66,19 @@ p {
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: bisque;
+    border-color: wheat;
+
+}
+
+#print-game {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 13px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-color: wheat;
 }
 
