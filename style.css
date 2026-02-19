@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("./media/background.jpg");
 }
 
 body {
@@ -12,6 +11,8 @@ body {
     justify-content: center;
     height: 100vh;
     background-image: url("./media/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 
